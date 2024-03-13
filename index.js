@@ -36,7 +36,7 @@ const verifyToken = (req, res, next) => {
 // Middleware to parse JSON request body
 app.use(express.json());
 
-app.get('/', () => {
+app.get('/', (req,res) => {
   res.json("API is runnung successfully");
 })
 
